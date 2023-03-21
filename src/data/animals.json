@@ -1,0 +1,15 @@
+[
+    { "src": "dog.jpg", "animalName": "Dog ", "animalAge": "17", "Weight": "32", "id": "1" },
+    { "src": "cat.jpg", "animalName": "Cat ", "animalAge": "4", "Weight": "28", "id": "2" },
+    { "src": "alien.jpg", "animalName": "??? ", "animalAge": "???", "Weight": "???", "id": "3" },
+    { "src": "fish.jpg", "animalName": "Fish ", "animalAge": "23", "Weight": "1.2", "id": "4" },
+    { "src": "panda.jpg", "animalName": "Panda ", "animalAge": "19", "Weight": "125", "id": "5" },
+    { "src": "tiger.jpg", "animalName": "Tiger ", "animalAge": "25", "Weight": "107", "id": "6" },
+    { "src": "dolphine.jpg", "animalName": "Dolphine ", "animalAge": "8", "Weight": "85", "id": "7" },
+    { "src": "snake.jpg", "animalName": "Snake ", "animalAge": "17", "Weight": 19, "id": "8" },
+    { "src": "monkey.jpg", "animalName": "Monkey ", "animalAge": "1", "Weight": 52, "id": "9" },
+    { "src": "salamander.jpg", "animalName": "Salamander ", "animalAge": "4", "Weight": "3", "id": "10" },
+    { "src": "lion.jpg", "animalName": "Lion ", "animalAge": 58, "Weight": "101", "id": "11" },
+    { "src": "kangaroo.jpg", "animalName": "Kangaroo ", "animalAge": "45", "Weight": "91", "id": "12" }
+]
+
