@@ -29,12 +29,13 @@ function Gallery({ animals, firstImage = 0, infiniteSlide = true, onChange = () 
         }
     }
 
+    let currentAnimal = animals[currImageIdx];
 
     return (
         <div>
             <div className="gallery w-100 rounded d-flex align-items-center justify-content-center">
                 <button disabled={!infiniteSlide && currImageIdx === 0} className="bi bi-arrow-left rounded btn btn-primary w-70" onClick={handlePrevPhoto} title={"back to prev image"}></button>
-                <ImgShow animalSrc={animals[currImageIdx].src} />
+                <ImgShow animalSrc={currentAnimal.src} />
                 <button disabled={!infiniteSlide && currImageIdx === animals.length - 1} className="bi bi-arrow-right rounded btn btn-primary w-70" onClick={handleNextPhoto} title={"go to next image"}> </button>
             </div>
             <p className="text-center fs-3">{currImageIdx + 1}/{animals.length}</p>
@@ -43,9 +44,9 @@ function Gallery({ animals, firstImage = 0, infiniteSlide = true, onChange = () 
                     <h3>Animal Information</h3>
                 </div>
                 <ul className="list-group list-group-flush">
-                    <li className="list-group-item">Animal Name: {animals[currImageIdx].animalName}</li>
-                    <li className="list-group-item">Age: {animals[currImageIdx].animalAge}</li>
-                    <li className="list-group-item">Weight: {animals[currImageIdx].Weight} Kg</li>
+                    <li className="list-group-item">Animal Name: {currentAnimal.animalName}</li>
+                    <li className="list-group-item">Age: {currentAnimal.animalAge}</li>
+                    <li className="list-group-item">Weight: {currentAnimal.Weight} Kg</li>
                 </ul>
             </div>
         </div >
