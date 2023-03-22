@@ -5,7 +5,7 @@ import Gallery from "./cmps/Gallery";
 import Header from "./cmps/Header";
 import Checkbox from "./cmps/CheckBox";
 import ImgList from "./cmps/ImgList";
-import GalleryType from "./cmps/GalleryType";
+import GalleryDisplayType from "./cmps/GalleryDisplayType";
 import Footer from "./cmps/Footer";
 
 /////import animals/////////
@@ -24,7 +24,7 @@ function App() {
     setMyInfiniteSlide(!infiniteSlide)
   }
 
-  const handleGalleryTypeChange = () => {
+  const handleGalleryDisplayTypeChange = () => {
     setCircleGallery(!circleGallery);
   }
 
@@ -32,7 +32,7 @@ function App() {
   return (
     <div>
       <Header />
-      <GalleryType onClick={handleGalleryTypeChange} circleGallery={circleGallery} />
+      <GalleryDisplayType onClick={handleGalleryDisplayTypeChange} circleGallery={circleGallery} />
       {circleGallery ? <Gallery animals={animals} firstImage={0} infiniteSlide={infiniteSlide} onChange={handlePhotoChange} /> : <ImgList animals={animals} />}
       {circleGallery && <Checkbox onChange={handleCheckBoxChange} label="Infinite photo slide" />}
       <Footer />

@@ -1,4 +1,4 @@
-function GalleryType({ onClick = () => { 'default printing no pass to this cmp function' }, circleGallery = true }) {
+function GalleryDisplayType({ onClick = () => { 'default printing no pass to this cmp function' }, circleGallery = true }) {
     let galleryType = !circleGallery ? "bi bi-box-arrow-right" : "bi bi-border";
 
     return (
@@ -9,7 +9,7 @@ function GalleryType({ onClick = () => { 'default printing no pass to this cmp f
 
 }
 
-export default GalleryType;
+export default GalleryDisplayType;
 
 
 
